@@ -23,8 +23,11 @@
 <br />
 </label>
 <label>
-<input type="radio" name="r3" value="prod" />product
+<input type="radio" name="r3" value="mu;" />multiplication
 <br />
+<input type="radio" name="r4" value="div" />divison
+<br />
+
 </label>
 
  

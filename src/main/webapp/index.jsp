@@ -27,7 +27,8 @@
 <br />
 <input type="radio" name="r4" value="div" />divison
 <br />
-
+<input type="radio" name="r5" value="avg" />average
+<br />
 </label>
 
  

@@ -57,7 +57,7 @@ public class Calculator extends HttpServlet
         {
             out.println("<h1>Divison</h1>"+divFucn(a1, a2));
         }
-	if(request.getParameter("r5)!=null)
+	if(request.getParameter("r5")!=null)
         {
             out.println("<h1>Average</h1>"+avgFucn(a1, a2));
         }

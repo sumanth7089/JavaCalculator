@@ -26,7 +26,7 @@ public class Calculator extends HttpServlet
        }
         public long avgFucn(long first, long second){
 
-                return (first+second)/2;
+                return ((first+second)/2);
        }
         
 	

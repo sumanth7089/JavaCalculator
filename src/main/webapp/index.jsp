@@ -25,8 +25,12 @@
 <label>
 <input type="radio" name="r3" value="mu;" />multiplication
 <br />
+</label>
+<label>
 <input type="radio" name="r4" value="div" />divison
 <br />
+</label>
+<label>
 <input type="radio" name="r5" value="avg" />average
 <br />
 </label>

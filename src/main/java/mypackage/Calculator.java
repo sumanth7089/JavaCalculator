@@ -6,27 +6,32 @@ import javax.servlet.http.*;
 
 public class Calculator extends HttpServlet
 {
-	public long addFucn(long first, long second){
+	public long addFucn(long first,long second){
 		
 		return first+second;
 	}
 	
-	public long subFucn(long first, long second){
+	public long subFucn(long first,long second){
 		
-		return second-first;
+		return first-second;
 	}
 	
-	public long mulFucn(long first, long second){
+	public long mulFucn(long first,long second){
 		
 		return first*second;
 	}
-	 public long divFucn(long first, long second){
+	 public float divFucn(float first,float second){
 
-                return second/first;
+                return first/second;
        }
-        public long avgFucn(long first, long second){
+        public float avgFucn(float first,float second){
 
                 return ((first+second)/2);
+      }		
+	public long modFucn(long first,long second){
+
+                return first%second;
+	
        }
         
 	
@@ -61,6 +66,11 @@ public class Calculator extends HttpServlet
         {
             out.println("<h1>Average</h1>"+avgFucn(a1, a2));
         }
+	if(request.getParameter("r6")!=null)
+        {
+            out.println("<h1>Modulus</h1>"+modFucn(a1, a2));
+        }
+
 	RequestDispatcher rd=request.getRequestDispatcher("/index.jsp");  
         rd.include(request, response);  
         }

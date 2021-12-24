@@ -34,6 +34,10 @@
 <input type="radio" name="r5" value="avg" />average
 <br />
 </label>
+<label>
+<input type="radio" name="r6" value="mod" />Modulus
+<br />
+</label>
 
  
 </div>

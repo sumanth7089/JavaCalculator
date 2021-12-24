@@ -24,7 +24,11 @@ public class Calculator extends HttpServlet
 
                 return second/first;
        }
-	
+        public long avgFucn(long first, long second){
+
+                return (first+second)/2;
+       }
+        
 	
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
@@ -52,6 +56,10 @@ public class Calculator extends HttpServlet
 	if(request.getParameter("r4")!=null)
         {
             out.println("<h1>Divison</h1>"+divFucn(a1, a2));
+        }
+	if(request.getParameter("r5)!=null)
+        {
+            out.println("<h1>Average</h1>"+avgFucn(a1, a2));
         }
 	RequestDispatcher rd=request.getRequestDispatcher("/index.jsp");  
         rd.include(request, response);  

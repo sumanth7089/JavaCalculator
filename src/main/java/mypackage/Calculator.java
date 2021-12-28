@@ -74,7 +74,7 @@ public class Calculator extends HttpServlet
 	RequestDispatcher rd=request.getRequestDispatcher("/index.jsp");  
         rd.include(request, response);  
         }
-        catch(Exception e)
+	catch(Exception e)
         {
 
         }
